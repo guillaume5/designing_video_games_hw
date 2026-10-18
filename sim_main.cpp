@@ -1,4 +1,5 @@
-#include "Vtest_hvsync_generator_top.h"
+//#include "Vtest_hvsync_generator_top.h"
+#include "Vtest_bitmap.h"
 #include "verilated.h"
 #include <verilated_vcd_c.h>
 #include <iostream>
@@ -72,7 +73,7 @@ int main(int argc, char** argv) {
   //VerilatedContext* contextp = new VerilatedContext;
   //contextp->commandArgs(argc, argv);
 
-  Vtest_hvsync_generator_top* top = new Vtest_hvsync_generator_top();
+  Vtest_bitmap* top = new Vtest_bitmap();
   
   //Verilated::traceEverOn(true);
   //VerilatedVcdC *m_trace = new VerilatedVcdC;
